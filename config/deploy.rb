@@ -1,7 +1,7 @@
 # Change these
 server '128.199.169.238', port: 3000, roles: [:web, :app, :db], primary: true
 
-set :repo_url,        'git@example.com:username/appname.git'
+set :repo_url,        'git@github.com:anik3tra0/test-auth.git'
 set :application,     'Test-Auth'
 set :user,            'developer'
 set :puma_threads,    [4, 16]
