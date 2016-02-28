@@ -6,6 +6,11 @@ set :application,     'test-auth'
 set :user,            'developer'
 set :puma_threads,    [4, 16]
 set :puma_workers,    0
+set :scm,           :git
+set :branch,        :master
+set :format,        :pretty
+set :log_level,     :debug
+set :keep_releases, 5
 
 set :rbenv_type, :user # or :system, depends on your rbenv setup
 set :rbenv_ruby, '2.2.3'
@@ -34,11 +39,7 @@ set :puma_worker_timeout, nil
 set :puma_init_active_record, true  # Change to false when not using ActiveRecord
 
 ## Defaults:
-# set :scm,           :git
-# set :branch,        :master
-# set :format,        :pretty
-# set :log_level,     :debug
-# set :keep_releases, 5
+
 
 ## Linked Files & Directories (Default None):
 # set :linked_files, %w{config/database.yml}
