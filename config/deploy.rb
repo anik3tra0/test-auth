@@ -2,7 +2,7 @@
 server '128.199.169.238', port: 80, roles: [:web, :app, :db], primary: true
 
 set :repo_url,        'git@github.com:anik3tra0/test-auth.git'
-set :application,     'Test-Auth'
+set :application,     'test-auth'
 set :user,            'developer'
 set :puma_threads,    [4, 16]
 set :puma_workers,    0
